@@ -1,0 +1,107 @@
+.app {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fa;
+  min-height: 100vh;
+}
+ 
+.queue-panel {
+  background: #a3e3f9;
+  padding: 1rem;
+  width: 260px;
+  border-radius: 8px;
+}
+ 
+.queue-panel h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #053a5f;
+}
+ 
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+ 
+.buttons button {
+  padding: 0.5rem;
+  border: none;
+  background: #0d9ddb;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+.buttons button:hover {
+  background: #0a86bb;
+}
+ 
+.waiting {
+  background: #d3d3d3;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+ 
+.waiting h3 {
+  margin-top: 0;
+  text-align: center;
+}
+ 
+.waiting ul {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+ 
+.waiting li {
+  padding: 2px 0;
+  font-size: 14px;
+}
+ 
+.cashiers {
+  flex: 1;
+}
+ 
+.cashiers h2 {
+  text-align: center;
+  margin-top: 0;
+}
+ 
+.cashier-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+ 
+.cashier-card {
+  background: #fff;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  width: 150px;
+}
+ 
+.cashier-card h3 {
+  margin-top: 0;
+}
+ 
+.cashier-card button {
+  padding: 0.4rem 0.8rem;
+  background: #eee;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+.serving {
+  font-weight: bold;
+  color: #0a66c2;
+}

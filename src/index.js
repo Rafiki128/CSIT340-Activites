@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Shopping from './Shopping.jsx'
+import FruitList from "./FruitList.jsx"
+import Abella from "./Abella.jsx"
+import CQS from './CQS.jsx'
+import CalculatorJSX from './CalculatorJSX.jsx';
+import RosalinaSalaAbellaQuizTaker from './RosalinaSalaAbellaQuizTaker.jsx'
+import Scidamath from './Scidamath.jsx'
+import AbellaApp from './AbellaApp.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AbellaApp/>
   </React.StrictMode>
 );
 
