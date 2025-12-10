@@ -1,10 +1,10 @@
 import React from "react";
-import { TodoProvider } from "./Components/TodoContext";
-import TodoInput from "./Components/TodoInput";
-import TodoList from "./Components/TodoList";
-import "./Components/TodoApp.css";
+import { TodoProvider } from "../Components/TodoContext";
+import TodoInput from "../Components/TodoInput";
+import TodoList from "../Components/TodoList";
+import "../Components/TodoApp.css";
 
-export default function AbellaApp() {
+export function AbellaApp() {
   return (
     <TodoProvider>
       <div className="app-container">

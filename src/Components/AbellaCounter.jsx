@@ -1,22 +1,26 @@
-function AbellaConuter(){
-const cardStyle = {
-    position: 'relative',
-    border: '1px solid grey',
-    borderRadius: '8px',
-    margin: '12px',
-    width: '150px',
-    height: '150px',
-    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
-    overflow: 'hidden',
-    backgroundColor: '#F5F5DC',
-  };
+import React, { useState } from 'react';
 
-	return (
-		<div style = {cardStyle}>
-		<h2>Count Value: </h2>
-		<button>[+]</button>
-		<button>[-]</button>
-		</div>
-		)
+export function AbellaCounter({ id, onDelete }) { 
+    const [count, setCount] = useState(0);
+
+    const increment = () => setCount(count + 1);
+    const decrement = () => setCount(prev => Math.max(0, prev - 1));
+    const reset = () => setCount(0);
+
+    return (
+        <div className="counter-card">
+            <h3>Counter #{id}</h3>
+            <p className="counter-display">{count}</p>
+            
+            <div className="counter-controls">
+                <button className="button-1" onClick={increment}>+</button>
+                <button className="button-1" onClick={decrement}>-</button>
+            </div>
+            
+            <button className="button-2" onClick={reset}>Reset</button>
+            <button className="button-delete" onClick={() => onDelete(id)}>
+                Delete
+            </button>
+        </div>
+    );
 }
-export default AbellaConuter;

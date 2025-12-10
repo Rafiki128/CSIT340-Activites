@@ -1,10 +1,12 @@
 // src/Calculator.js
 import React, { useState } from "react";
-import "./Components/CalculatorCSS.css";
-import Display from "./Components/CalcDisplay";
-import ButtonGrid from "./Components/CalcButtons";
+import "../Components/CalculatorCSS.css";
+import Display from "../Components/CalcDisplay";
+import ButtonGrid from "../Components/CalcButtons";
 
-const Calculator = () => {
+
+
+export function CalculatorJSX() {
   const [currentInput, setCurrentInput] = useState("");
   const [result, setResult] = useState("");
 
@@ -21,7 +23,7 @@ const Calculator = () => {
       setCurrentInput("");
       setResult("");
     } else if (value === "DEL") {
-  setCurrentInput((prev) => prev.slice(0, -1)); // remove last char
+  setCurrentInput((prev) => prev.slice(0, -1)); 
     }   else {
       setCurrentInput((prev) => prev + value);
       setResult("");
@@ -49,4 +51,3 @@ const Calculator = () => {
   );
 };
 
-export default Calculator;
